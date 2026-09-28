@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./app.css" />
+    <title>صفحه ثبت نام</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="info">
+        <h1 class="logintext">فرم ثبت نام</h1>
+
+        <input
+          class="usernamefield"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="نام کاربری "
+        />
+        <p class="username-error failed__text hidden"></p>
+
+        <input
+          class="usernamefield"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="ایمیل"
+        />
+        <p class="email-error failed__text hidden"></p>
+
+        <input
+          class="passwordfield"
+          type="password"
+          name="pass"
+          id="password"
+          placeholder="رمز عبور"
+          required
+        />
+        <p class="password-error failed__text hidden"></p>
+        <button type="submit" class="login">ورود</button>
+      </form>
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+    </div>
+    <div class="modal-screen hidden">
+      <div class="modal-card">
+        <div class="success-animation"></div>
+
+        <p class="model-text">عملیات با موفقیت انجام شد</p>
+
+        <button class="modal-button">تائید</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
